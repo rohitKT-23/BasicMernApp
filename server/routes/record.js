@@ -33,7 +33,7 @@ recordRoutes.route("/record/add").post(async function (req, res) {
         name: req.body.name,
         position: req.body.position,
         level: req.body.level
-    }
+    } 
     try {
         const result = await db_connect.collection("records").insertOne(myobj)
         console.log("1 document created")
